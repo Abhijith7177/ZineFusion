@@ -28,8 +28,9 @@ import DefaultLayout from "../src/Components/Admin/DefaultLayout/Index";
 import AdminRoutes from "./Routes/AdminRoutes";
 
 
-
-
+// New login
+import LoginPage from "../src/Components/Login&Singup/LoginPage.js"
+import SingupPage from "../src/Components/Login&Singup/SingupPage.js"
 
 function App() {
   return (
@@ -44,8 +45,10 @@ function App() {
         <Route path="/services" element={<Service/>} />
         <Route path="/services/caravanbooking" element={<CaravanBooking/>} />
         <Route path="/services/ticketbooking" element={<TicketBooking/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/menu" element={<Menu/>} />
+        {/* <Route path="/login" element={<Login/>} /> */}
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/signin" element={<SingupPage />} />
+        <Route path="/menu" element={<Menu/>} /> 
         <Route path="/movies" element={<Movies/>} />
         <Route path="/shortfilms" element={<ShortFilms/>}/>
         <Route path="/webseries" element={<WebSeries/>}/>
